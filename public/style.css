@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica';
+}
+
+.chatview {
+  width: 60%;
+  margin: 100px auto;
+  clear: both;
+  height: 500px
+}
+.chatters {
+  background: #ccc;
+  width: 15%;
+  float: left;
+  height: inherit;
+}
+.chatters ul {
+  list-style: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 25px;
+}
+.chatbox {
+  background: #eee;
+  float: right;
+  width: 85%;
+}
+
+#messageList {
+  list-style: none;
+  overflow: auto;
+  padding: 10px;
+  height: 400px;
+  margin: 0;
+  box-sizing: border-box;
+}
+#messageList li:nth-child(even) {
+  background: #fff;
+}
+#messageList li {
+  margin: 0;
+  padding: 10px;
+}
+
+#chat_form {
+  background: #ddd;
+  display: flex;
+  padding: 12px;
+  overflow: auto;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+#chat_input {
+  height: 30px;
+  font-size: 1.2em;
+  width: 83%;
+}
+
+.submitButton {
+  background: #ffaf62;
+  border: 2px #d08e3d solid;
+  margin-left: 2%;
+  float: right;
+  height: 36px;
+  width: 15%;
+  font-weight: bold;
+  color: #a35d19;
+  vertical-align: middle;
+}
+
+#status {
+  color: #999;
+  height: 40px;
+  padding: 10px;
+  border-bottom: solid #ccc 1px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.chatters li {
+  margin: 0;
+  line-height: 2em;
+  color: #777;
+  font-weight: bold;
+  text-align: center;
+}

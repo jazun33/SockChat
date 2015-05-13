@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>SockChat</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <base href=".">
+</head>
+<body>
+
+<div class="chatview">
+  <div class="chatters">
+    <ul id="userList">
+    </ul>
+  </div>
+	<div class="chatbox">
+    <p id="status"></p>
+		<ul id="messageList">
+		</ul>
+    <form id="chat_form">
+      <input id="chat_input" placeholder="Type here..." autofocus autocomplete="off">
+      <button class="submitButton" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="chatclient.js"></script>
+</body>
+</html>
